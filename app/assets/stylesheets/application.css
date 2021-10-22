@@ -21,45 +21,5 @@
    font-weight: normal;
    font-style: normal;
  }
- body{
 
-     background-image: url(maps.png);
- }
- .conteiner{
-   margin: 5% 5%;
- }
- html, body, div, span, applet, object, iframe,
- h1, h2, h3, h4, h5, h6, p, blockquote, pre,
- a, abbr, acronym, address, big, cite, code,
- del, dfn, em, img, ins, kbd, q, s, samp,
- small, strike, strong, sub, sup, tt, var,
- b, u, i, center,
- dl, dt, dd, ol, ul, li,
- fieldset, form, label, legend,
- table, caption, tbody, tfoot, thead, tr, th, td,
- article, aside, canvas, details, embed,
- figure, figcaption, footer, header, hgroup,
- menu, nav, output, ruby, section, summary,
- time, mark, audio, video {
-   font-family: Helios;
-   color: #021B67;
- }
- button:hover{
-   background-color: #021B67;
- }
- // tr:hover{
- //   border: 5px solid #ffd300;
- // }
- button{
-  background-color: #ffd300;
-  border: none;
-  border-radius: 10px;
-  width: auto;
-  padding: 1.5%;
-  text-align: center;
- }
- button > a{
-   color: white;
-   font-size: 20px;
-   text-decoration: none;
- }
+ 

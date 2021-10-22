@@ -1,3 +1,4 @@
+<%= stylesheet_link_tag "posts" %>
 <%= form_with(model: post) do |form| %>
   <% if post.errors.any? %>
     <div id="error_explanation">
@@ -10,35 +11,36 @@
       </ul>
     </div>
   <% end %>
+<table>
+  <tr>
+    <td><%= form.label :author, "автор" %></td>
+    <td><%= form.text_field :author %></td>
+  </tr>
+  <tr>
+    <td><%= form.label :tag, "тема" %></td>
+    <td><%= form.select :tag, ['ЧП', 'Порт', 'Новость'] %></td>
+  </tr>
+  <tr>
+    <td><%= form.label :title, "заголовок" %></td>
+    <td><%= form.text_field :title %></td>
+  </tr>
+  <tr>
+    <td><%= form.label :content, "контент" %></td>
+    <td><%= form.text_area :content %></td>
+  </tr>
+  <tr>
+    <td><%= form.label :image, "добавить изображение" %></td>
+    <td><button type="button" name="button"><%= form.file_field :image %></button></td>
+  </tr>
+</table>
 
-  <div class="field">
-    <%= form.label :author, "автор" %>
-    <%= form.text_field :author %>
-  </div>
-
-  <div class="field">
-    <%= form.label :tag, "тема" %>
-    <%= form.select :tag, ['ЧП', 'Порт', 'Новость'] %>
-  </div>
-
-  <div class="field">
-    <%= form.label :title, "заголовок" %>
-    <%= form.text_field :title %>
-  </div>
-
-  <div class="field">
-    <%= form.label :content, "контент" %>
-    <%= form.text_area :content %>
-  </div>
-
-  <div>
-	   <%= form.label :image, "добавить изображение" %>
-	    <button type="button" name="button"><%= form.file_field :image %></button>
-  </div>
 
   <div class="actions">
     <button type="button" name="button">
         <%= link_to 'сохранить', "#", onclick: "this.closest('form').submit();return false" %>
+    </button>
+    <button type="button" name="button">
+      <%= link_to 'Назад', posts_path %>
     </button>
   </div>
 <% end %>
