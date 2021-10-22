@@ -21,6 +21,7 @@ html{
   background: #021B67;
 }
 h3{
+  position: absolute;
   background-color: white;
   color: #021B67;
   width: 30%;
@@ -30,26 +31,61 @@ h3{
 
 }
 .img{
+  position: absolute;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: conteiner;
+  background-size: contain;
+}
+.row1{
+  background-image: url("row1.svg");
+  width: 20%;
+  padding-bottom: 30%;
+  top: 100px;
+  left: 1000px;
+}
+.row2{
+    background-image: url("row2.svg");
+    width: 50%;
+    padding-bottom: 30%;
+    top: 740px;
+    left: 180px;
+}
+.compas{
+      background-image: url("compas.svg");
+      width: 16%;
+      padding-bottom: 16%;
+      top: 960px;
+      left: 460px;
+}
+.volna1{
+      background-image: url("volna1.svg");
+      width: 20%;
+      padding-bottom: 14%;
+      top: 1100px;
+      left: 60px;
 }
 .location{
   background-image: url("location.svg");
   width: 5%;
   padding-bottom: 7%;
+  top: 340px;
+  left: 900px;
 }
 .phone1{
   padding-top: 20%;
   background-image: url("phone1.png");
   width: 50%;
   padding-bottom: 50%;
+  top: 220px;
+  left: 40px;
 }
 .phone2{
   padding-top: 20%;
   background-image: url("phone2.png");
   width: 50%;
   padding-bottom: 50%;
+  top: 360px;
+  left: 580px;
 }
 .title{
   background-image: url("fon1.svg");
@@ -57,8 +93,42 @@ h3{
   padding-bottom: 100%;
 
 }
+.text_title{
+  position: absolute;
+  top: 280px;
+  left: 60px;
+}
 .logo_promo{
   background-image: url("logo_promo.svg");
   width: 74%;
   padding-bottom: 20%;
+  top: 40px;
+  left: 60px;
+}
+.text1{
+  position: absolute;
+  top: 380px;
+  left: 60px;
+}
+.text2{
+  position: absolute;
+  top: 600px;
+  left: 1000px;
+  width: 200px;
+}
+.text3{
+  position: absolute;
+  top: 1200px;
+  left: 400px;
+  width: 400px;
+}
+.function{
+  margin-top: 20px;
+  position: relative;
+  background-color: white;
+  width: 100%;
+  padding-bottom: 120%;
+}
+.cards{
+  color: #021B67;
 }
