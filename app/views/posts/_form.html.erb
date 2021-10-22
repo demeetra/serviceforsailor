@@ -37,6 +37,8 @@
   </div>
 
   <div class="actions">
-    <button type="button" name="button"><%= form.submit "сохранить" %></button>
+    <button type="button" name="button">
+        <%= link_to 'сохранить', "#", onclick: "this.closest('form').submit();return false" %>
+    </button>
   </div>
 <% end %>
