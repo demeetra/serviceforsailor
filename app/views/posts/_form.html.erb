@@ -33,10 +33,10 @@
 
   <div>
 	   <%= form.label :image, "добавить изображение" %>
-	    <%= form.file_field :image %>
+	    <button type="button" name="button"><%= form.file_field :image %></button>
   </div>
 
   <div class="actions">
-    <%= form.submit "сохранить" %>
+    <button type="button" name="button"><%= form.submit "сохранить" %></button>
   </div>
 <% end %>
