@@ -1,9 +1,11 @@
+<%= stylesheet_link_tag "posts" %>
 <p id="notice"><%= notice %></p>
 
 <h1>Записи на форуме</h1>
 
-
+<button type="button" name="button">
 <%= link_to 'Новая запись', new_post_path %>
+</button>
 
 <table>
   <thead>
@@ -30,5 +32,4 @@
     <% end %>
   </tbody>
 </table>
-
-<%= link_to 'О проекте', about_path %>
+<button type="button" name="button"><%= link_to 'О проекте', about_path %></button>
