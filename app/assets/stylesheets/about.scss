@@ -2,5 +2,126 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 html{
-  background-color: yellow;
+  background-color: #021B67;
+ background-image: url('Group 32.png');
+ background-size: cover;
 }
+
+#logo{
+background-image: url('Group28.svg');
+}
+
+p, h1 {
+font-family: 'Helios';
+color: white;
+padding-left: 5vw;
+}
+p{
+font-size: 24pt;
+}
+h1{
+font-size: 40pt;
+margin-top: 15vh;
+}
+
+#top {
+margin-bottom: 35vh;
+width: 55vw;
+padding-left: 10vw;
+}
+
+.yellow{
+margin: 15vh 0 0 5vw;
+display: flex;
+position: relative;
+flex-direction: row;
+    align-items: center;
+}
+.white {
+margin: 0vh 0 0 5vw;
+display: flex;
+position: relative;
+flex-direction: row;
+    align-items: baseline;
+    
+}
+
+#square1 {
+    width: 45px;
+    height: 45px;
+    background-color: #FFC700;
+}
+#square2 {
+margin-top: 10vh;
+width: 45px;
+    height: 45px;
+    background-color: white;
+}
+#back {
+width: 100vw;
+height: 100vh;
+}
+
+.three{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    margin-top: 20vh;
+}
+.forum, .karta, .account {
+padding: 2vw;
+;}
+
+.bullits{
+display: flex;
+margi-top: 20vh;
+padding-top: 10vh;
+position: relative;
+    flex-direction: column;
+    background-color: white;
+    height: 130vh;
+}
+.bullits p, .bullits h1{
+color: #021B67;
+}
+#one {
+display: block;
+background-image: url('Group 33.png');
+position: relative;
+}
+.mockups {
+display: flex;
+position: relative;
+    align-content: center;
+    justify-content: space-evenly;
+        margin-bottom: 25vh;
+}
+.us{
+display: flex;
+position: relative;
+    height: 80vh;
+    padding-top: 2vh;
+}
+
+.footer{
+background-image: url('Vector.svg');
+background-size: cover;
+height: 70vh;
+display: flex;
+position: relative;
+flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.footer p{
+font-size: 18pt;
+color: #021B67;
+}
+.adc{
+background-image: url('adclogo.png');
+}
+.hse{
+background-image: url('hselogo.png');
+}
+
