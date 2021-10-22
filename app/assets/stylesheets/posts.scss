@@ -2,7 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 body{
-
     background-image: url(maps.png);
 }
 img.image_for_post{
@@ -43,6 +42,9 @@ button{
  padding: 1.5%;
  text-align: center;
 }
+.image_button {
+  width: 30px;
+}
 button > a{
   color: white;
   font-size: 20px;
@@ -78,11 +80,15 @@ table th {
 table td {
  padding: 3% 1%;
  border: none;
- padding-left: 2%;
+ padding-inline-start: 0;
 }
-tr > td:nth-child(1){
+tr > td:nth-child(1), tr > th:nth-child(1) {
   width: 20%;
+  padding-inline-start: 2%;
 }
+tr > th:nth-child(2), tr > th:nth-child(3) {
+  padding-left: 0;
+ }
 tr > td:nth-child(3){
   width: 50%;
 }

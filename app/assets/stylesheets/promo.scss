@@ -1,3 +1,64 @@
 // Place all the styles related to the Promo controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video,select, input, textarea {
+  font-family: Helios;
+  color: #fff;
+}
+html{
+  background: #021B67;
+}
+h3{
+  background-color: white;
+  color: #021B67;
+  width: 30%;
+}
+.conteiner{
+  margin: 3% 3%;
+
+}
+.img{
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: conteiner;
+}
+.location{
+  background-image: url("location.svg");
+  width: 5%;
+  padding-bottom: 7%;
+}
+.phone1{
+  padding-top: 20%;
+  background-image: url("phone1.png");
+  width: 50%;
+  padding-bottom: 50%;
+}
+.phone2{
+  padding-top: 20%;
+  background-image: url("phone2.png");
+  width: 50%;
+  padding-bottom: 50%;
+}
+.title{
+  background-image: url("fon1.svg");
+  width: 100%;
+  padding-bottom: 100%;
+
+}
+.logo_promo{
+  background-image: url("logo_promo.svg");
+  width: 74%;
+  padding-bottom: 20%;
+}
