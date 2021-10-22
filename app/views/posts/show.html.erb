@@ -20,6 +20,8 @@
   <%= @post.content %>
 </p>
 
+<%= image_tag(@post.image.url, alt: 'ImageForPosts') if @post.image? %>
+
 <h2>Comments</h2>
 <%= render @post.comments %>
 

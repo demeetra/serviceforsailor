@@ -1,14 +1,17 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Posts</h1>
+<h1>Записи на форуме</h1>
+
+
+<%= link_to 'Новая запись', new_post_path %>
 
 <table>
   <thead>
     <tr>
-      <th>Author</th>
-      <th>Tag</th>
-      <th>Title</th>
-      <th>Content</th>
+      <th>Автор</th>
+      <th>Тема</th>
+      <th>Заголовок</th>
+      <th>Контент</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -20,14 +23,12 @@
         <td><%= post.tag %></td>
         <td><%= post.title %></td>
         <td><%= post.content %></td>
-        <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Показать', post %></td>
+        <td><%= link_to 'Редактировать', edit_post_path(post) %></td>
+        <td><%= link_to 'Удалить', post, method: :delete, data: { confirm: 'Удалить?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<br>
-
-<%= link_to 'New Post', new_post_path %>
+<%= link_to 'О проекте', about_path %>
