@@ -12,31 +12,31 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :author %>
+    <%= form.label :author, "автор" %>
     <%= form.text_field :author %>
   </div>
 
   <div class="field">
-    <%= form.label :tag %>
-    <%= form.text_field :tag %>
+    <%= form.label :tag, "тема" %>
+    <%= form.select :tag, ['ЧП', 'Порт', 'Новость'] %>
   </div>
 
   <div class="field">
-    <%= form.label :title %>
+    <%= form.label :title, "заголовок" %>
     <%= form.text_field :title %>
   </div>
 
   <div class="field">
-    <%= form.label :content %>
+    <%= form.label :content, "контент" %>
     <%= form.text_area :content %>
   </div>
 
   <div>
-	   <%= form.label :image %>
+	   <%= form.label :image, "добавить изображение" %>
 	    <%= form.file_field :image %>
   </div>
-  
+
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "сохранить" %>
   </div>
 <% end %>
