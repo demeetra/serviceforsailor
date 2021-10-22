@@ -32,7 +32,6 @@ table {
   margin-left: 5%;
 	width: 90%;
 	margin-bottom: 5%;
-	border-collapse: collapse;
 	outline: 5px solid #ffd300;
 	font-size: 18px;
 	background: #fff;
@@ -44,12 +43,12 @@ table th {
 	text-align: left;
 }
 table td {
-	padding: 7px;
+	padding: 3% 1%;
 	border: none;
-	border-top: 3px solid #fff;
-	border-bottom: 3px solid #fff;
-	font-size: 15px;
 }
-table tbody tr:nth-child(even){
-	background: #f8f8f8!important;
+tr > td:nth-child(1){
+  width: 20%;
+}
+tr > td:nth-child(3){
+  width: 50%;
 }

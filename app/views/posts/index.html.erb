@@ -26,8 +26,8 @@
         <td><%= post.title %></td>
         <!-- <td><%= post.content %></td> -->
         <td><button type="button" name="button"><%= link_to 'Показать', post %></button></td>
-        <td><button type="button" name="button"><%= link_to 'Редактировать', edit_post_path(post) %></button></td>
-        <td><button type="button" name="button"><%= link_to 'Удалить', post, method: :delete, data: { confirm: 'Удалить?' } %></button></td>
+        <td><button type="button" name="button"><%= link_to 'Редакт', edit_post_path(post) %></button></td>
+        <td><button type="button" name="button"><%= link_to 'Удал', post, method: :delete, data: { confirm: 'Удалить?' } %></button></td>
       </tr>
     <% end %>
   </tbody>
