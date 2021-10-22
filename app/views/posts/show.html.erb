@@ -18,7 +18,7 @@
   <tr>
     <td><strong>Контент:</strong></td>
     <td>  <%= @post.content %></td>
-    <td><%= image_tag(@post.image.url, alt: 'ImageForPosts') if @post.image? %></td>
+    <td><%= image_tag(@post.image.url, alt: 'ImageForPosts', class:"image_for_post") if @post.image? %></td>
   </tr>
 </table>
 
