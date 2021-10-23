@@ -50,6 +50,14 @@ h3{
     top: 740px;
     left: 180px;
 }
+.row3{
+    background-image: url("row3.png");
+    width: 22%;
+    padding-bottom: 30%;
+    position: relative;
+    top: 0px;
+    left: -608px;
+}
 .compas{
       background-image: url("compas.svg");
       width: 16%;
@@ -63,6 +71,13 @@ h3{
       padding-bottom: 14%;
       top: 1100px;
       left: 60px;
+}
+.volna2{
+      background-image: url("volna2.png");
+      width: 25%;
+      padding-bottom: 14%;
+      top: 68px;
+      left: 680px;
 }
 .location{
   background-image: url("location.svg");
@@ -126,9 +141,109 @@ h3{
   margin-top: 20px;
   position: relative;
   background-color: white;
+  width: 110%;
+  padding-bottom: 20%;
+}
+.text_function{
+  z-index: 1;
+  position: relative;
+  color: #021B67;
+  font-size: 48px;
+  left: 60px;
   width: 100%;
-  padding-bottom: 120%;
+  padding-top: 10%;
+  // padding-bottom: 24%;
 }
 .cards{
+  position: relative;
+  display: flex;
+}
+.card_icon{
+  border-radius: 30px;
+  position: relative;
+  background-color: #ffd300;
+  background-image: url("forum_icon.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  width: 16%;
+  padding-bottom: 16%;
+  margin: 5%;
+}
+
+.c_i_text h3, .c_i_text p{
   color: #021B67;
+  position: relative;
+  margin-top: 25%;
+}
+.c_i_text{
+  position: relative;
+  width: 25%;
+  height: 10%;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1038px;
+}
+.footer>h2 {
+  width: 50%;
+  margin-left: 60px;
+  height: 40px;
+  margin-right: 90px;
+}
+.new_subscriber {
+  position: relative;
+  top: -190px;
+  left: 32%;
+  width: 60%;
+  height: fit-content;
+}
+.new_subscriber > input {
+  margin: 1%;
+  padding: 1.5%;
+  text-align: center;
+}
+.new_subscriber > input:nth-child(2) {
+  width: 60%;
+  border-width: 3px;
+  border-radius: 10px;
+  border-color: #ffd300;
+}
+.new_subscriber > input:nth-child(3) {
+  width: 64%;
+  background-color: #ffd300;
+  border: none;
+  border-radius: 10px;
+}
+button:hover{
+  background-color: #021B67;
+}
+// tr:hover{
+//   border: 5px solid #ffd300;
+// }
+button{
+ background-color: #ffd300;
+ border: none;
+ border-radius: 10px;
+ width: auto;
+ padding: 1.5%;
+ text-align: center;
+}
+.image_button {
+  width: 30px;
+}
+button > a{
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+.details {
+  margin-left: 60px;
+  margin-bottom: 60px;
+  text-decoration: none;
+}
+.details>a {
+  text-decoration: none;
 }
