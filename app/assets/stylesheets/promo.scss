@@ -52,11 +52,11 @@ h3{
 }
 .row3{
     background-image: url("row3.png");
-    width: 22%;
+    width: 30%;
     padding-bottom: 30%;
     position: relative;
-    top: 0px;
-    left: -608px;
+    top: 120px;
+    left: -500px;
 }
 .compas{
       background-image: url("compas.svg");
@@ -186,24 +186,31 @@ h3{
   flex-direction: row;
   flex-wrap: wrap;
   width: 1038px;
+  background-image: url("maps3.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .footer>h2 {
+  position: relative;
   width: 50%;
   margin-left: 60px;
   height: 40px;
-  margin-right: 90px;
+  left: 20px;
+  top: 80px;
+
 }
 .new_subscriber {
   position: relative;
-  top: -190px;
-  left: 32%;
-  width: 60%;
+  top: -70px;
+  left: 50%;
+  width: 90%;
   height: fit-content;
 }
 .new_subscriber > input {
   margin: 1%;
   padding: 1.5%;
   text-align: center;
+  border: 5px solid #ffd300;
 }
 .new_subscriber > input:nth-child(2) {
   width: 60%;
@@ -246,4 +253,7 @@ button > a{
 }
 .details>a {
   text-decoration: none;
+}
+.details:hover{
+  color: #ffd300;
 }
