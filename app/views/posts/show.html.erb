@@ -21,26 +21,39 @@
     <td><%= image_tag(@post.image.url, alt: 'ImageForPosts', class:"image_for_post") if @post.image? %></td>
   </tr>
 </table>
+<% pre_favorite = @post.favorites.find { |favorite| favorite.user_id == current_user.id} %>
+<% if pre_favorite %>
+    <%= button_to 'Remove from Favorite', post_favorite_path(@post, pre_favorite), method: :delete %>
+<% else %>
+    <%= button_to 'Add to Favorite', post_favorites_path(@post), method: :post %>
+<% end %>
 
 
- 
 
 <h2>Комментарии:</h2>
 
 
+<% if user_signed_in? %>
 <%= render "comments/form" %>
+<% else %>
+<p>Please <%= link_to 'login', new_user_session_path %> or <%= link_to 'register', new_user_registration_path %> to comment.</p>
+<% end %>
 <table>
   <tr>
     <th><b>Автор:</b></th>
     <th><b>Комментарий:</b></th>
 
   </tr>
-  <%= render @post.comments %>
+  <%= render @post.comments.select(&:persisted?) %>
 
   </table>
 
 
-<button type="button" name="button"><%= link_to 'Редактировать', edit_post_path(@post) %></button>
+<button type="button" name="button">
+  <% if user_signed_in? %>
+  <%= link_to 'Редактировать', edit_post_path(@post) %>
+  <% end %>
+</button>
 <button type="button" name="button"><%= link_to 'Назад', posts_path %></button>
 
 </div>

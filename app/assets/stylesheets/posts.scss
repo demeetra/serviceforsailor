@@ -2,15 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 body{
-    background-image: url(maps.png);
+    background-image: url(fon.svg);
+    background-size: cover;
+
 }
 img.image_for_post{
   width: 300px;
-  height: 180px;  border-radius: 10px;
-  border: 5px solid #021B67;
+  height: 180px;
 }
 .conteiner{
-  margin: 5% 5%;
+  margin: 4% 4%;
 }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -25,25 +26,27 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video,select, input, textarea {
-  font-family: Helios;
-  color: #021B67;
+  font-family: Lora-Regular;
+  color: #D8E0F3;
 }
 button:hover{
-  background-color: #021B67;
+  background-color: #444675;
 }
 // tr:hover{
 //   border: 5px solid #ffd300;
 // }
 button{
- background-color: #ffd300;
- border: none;
- border-radius: 10px;
+  background:none;
+ border: 1px solid white;
+
  width: auto;
  padding: 1.5%;
  text-align: center;
 }
 .image_button {
-  width: 30px;
+  width: auto;
+  border: none;
+  background: none;
 }
 button > a{
   color: white;
@@ -51,8 +54,9 @@ button > a{
   text-decoration: none;
 }
 input, select, textarea{
- border: 5px solid #021B67;
- border-radius: 10px;
+ border-bottom: 1px solid #D8E0F3;
+ border-style: solid;
+ background: none;
  width: 300px;
  height: 50px;
 }
@@ -60,21 +64,19 @@ textarea::placeholder, input::placeholder {
  padding-top: 3%;
  padding-left: 3%;
  font-size: 18px;
- color: #021B67;
+ color: #D8E0F3;
 }
 
 table {
- border-radius: 30px;
+border: 1px solid #042245;
  margin: 3% 0%;
  width: 100%;
- border: 5px solid #021B67;
  font-size: 18px;
- background: #fff;
 }
 table th {
  font-weight: bold;
  padding: 1%;
- border: none;
+ border-bottom: 1px solid #042245;
  text-align: left;
 }
 table td {

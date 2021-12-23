@@ -1,0 +1,96 @@
+// Place all the styles related to the categories controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+body{
+    background-image: url(fon.svg);
+    background-size: cover;
+
+}
+img.image_for_post{
+  width: 300px;
+  height: 180px;
+}
+.conteiner{
+  margin: 4% 4%;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video,select, input, textarea {
+  font-family: Lora-Regular;
+  color: #D8E0F3;
+}
+button:hover{
+  background-color: #444675;
+}
+// tr:hover{
+//   border: 5px solid #ffd300;
+// }
+button{
+  background:none;
+ border: 1px solid white;
+
+ width: auto;
+ padding: 1.5%;
+ text-align: center;
+}
+.image_button {
+  width: auto;
+  border: none;
+  background: none;
+}
+button > a{
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+input, select, textarea{
+ border-bottom: 1px solid #D8E0F3;
+ border-style: solid;
+ background: none;
+ width: 300px;
+ height: 50px;
+}
+textarea::placeholder, input::placeholder {
+ padding-top: 3%;
+ padding-left: 3%;
+ font-size: 18px;
+ color: #D8E0F3;
+}
+
+table {
+border: 1px solid #042245;
+ margin: 3% 0%;
+ width: 100%;
+ font-size: 18px;
+}
+table th {
+ font-weight: bold;
+ padding: 1%;
+ border-bottom: 1px solid #042245;
+ text-align: left;
+}
+table td {
+ padding: 3% 1%;
+ border: none;
+ padding-inline-start: 0;
+}
+tr > td:nth-child(1), tr > th:nth-child(1) {
+  width: 20%;
+  padding-inline-start: 2%;
+}
+tr > th:nth-child(2), tr > th:nth-child(3) {
+  padding-left: 0;
+ }
+tr > td:nth-child(3){
+  width: 50%;
+}

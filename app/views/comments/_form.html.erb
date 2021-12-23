@@ -5,6 +5,9 @@
 	<div class="field">
 		<%= f.text_area :body, placeholder: "комментарий" %>
 	</div>
+	<div class="field">
+    <%= current_user.email %>
+	</div>
 		<div class="actions">
 			<button type="button" name="button">
 	        <%= link_to 'отправить', "#", onclick: "this.closest('form').submit();return false" %>

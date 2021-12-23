@@ -11,14 +11,14 @@
       </ul>
     </div>
   <% end %>
-<table> 
+<table>
   <tr>
     <td><%= form.label :author, "автор" %></td>
     <td><%= form.text_field :author %></td>
   </tr>
   <tr>
-    <td><%= form.label :tag, "тема" %></td>
-    <td><%= form.select :tag, ['ЧП', 'Порт', 'Новость'] %></td>
+    <td> <%= form.label :category_id %></td>
+    <td> <%= form.select :category_id, Category.pluck(:name, :id) %></td>
   </tr>
   <tr>
     <td><%= form.label :title, "заголовок" %></td>

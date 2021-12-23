@@ -3,7 +3,19 @@
 <div class="conteiner">
 
 <h1>Записи на форуме</h1>
- 
+
+<h2>Фильтр</h2>
+<% Category.all.each do |cat| %>
+	<%= link_to cat.name, posts_path(category: cat.name) %> <br>
+<% end %>
+<button class="newpost_btn" type="button" name="button">
+  <%= link_to 'Категории', categories_path %>
+</button>
+
+<button class="newpost_btn" type="button" name="button">
+<%= link_to 'Новая запись', new_post_path %>
+</button>
+<!-- <button class="about_btn" type="button" name="button"><%= link_to 'О проекте', about_path %></button> -->
 
 <table>
   <thead>
@@ -23,17 +35,14 @@
         <td><%= post.tag %></td>
         <td><%= post.title %></td>
         <!-- <td><%= post.content %></td> -->
-        <td><button type="button" name="button"><%= link_to 'Показать', post %></button></td>
-        <td><button type="button" name="button" class="image_button"><%= link_to image_tag("edit.png"), edit_post_path(post) %></button></td>
-        <td><button type="button" name="button" class="image_button"><%= link_to image_tag("delete.png"), post, method: :delete, data: { confirm: 'Удалить?' } %></button></td>
+        <td><button type="button" name="button" class="image_button"><%= link_to 'Показать', post %></button></td>
+        <td><button type="button" name="button" class="image_button"><%= link_to image_tag("edit.svg"), edit_post_path(post) %></button></td>
+        <td><button type="button" name="button" class="image_button"><%= link_to image_tag("delete.svg"), post, method: :delete, data: { confirm: 'Удалить?' } %></button></td>
       </tr>
     <% end %>
   </tbody>
 </table>
-<button class="newpost_btn" type="button" name="button">
-<%= link_to 'Новая запись', new_post_path %>
-</button>
 
-<button class="about_btn" type="button" name="button"><%= link_to 'О проекте', about_path %></button>
+
 
 </div>

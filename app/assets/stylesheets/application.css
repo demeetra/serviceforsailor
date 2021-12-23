@@ -22,8 +22,39 @@
    font-style: normal;
  }
  @font-face {
-   font-family: 'Helios Bold';
-   src: url('Helios Bold.ttf') format('truetype');
+   font-family: 'Helvetica';
+   src: url('helvetica.otf') format('opentype');
    font-weight: normal;
    font-style: normal;
+ }
+ @font-face {
+   font-family: 'Helvetica-light';
+   src: url('helvetica-light.otf') format('opentype');
+   font-weight: normal;
+   font-style: normal;
+ }
+ @font-face {
+   font-family: 'Lora-Italic';
+   src: url('Lora-Italic.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+ }
+ @font-face {
+   font-family: 'Lora-Regular';
+   src: url('Lora-Regular.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+ }
+ .top_menu {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   width: 100%;
+   height: 60px;
+   margin-bottom: 40px;
+   background: #eee;
+   border-bottom: 1px solid #ddd;
+ }
+ .top_menu a {
+   margin: 0 20px;
  }
