@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'lending/index'
   resources :categories
   devise_for :users
   resources :subscribers
@@ -13,12 +14,13 @@ Rails.application.routes.draw do
 
   get 'promo', to: 'promo#index'
   get 'about', to: 'about#index'
+  get 'lending', to: 'lending#index'
 
   get 'users', to: 'users#index'
   get 'users/:id' => 'users#show', :as => :user
   delete 'users/:id', to: 'users#destroy'
 
 
-  root 'promo#index'
+  root 'lending#index'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

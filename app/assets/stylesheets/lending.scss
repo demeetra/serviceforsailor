@@ -1,0 +1,12 @@
+// Place all the styles related to the Lending controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.grid {
+  display: grid;
+  grid-template-columns: calc(100vw * 145/1440) calc(100vw * 211/1440) calc(100vw * 184/1440) calc(100vw * 121/1440) repeat(2, 1fr)
+                         calc(100vw * 121/1440) calc(100vw * 184/1440) calc(100vw * 211/1440) calc(100vw * 145/1440);
+  grid-gap: calc(100vw * 40/1440) calc(100vw * 0/1440);
+}
+.main_map{
+  background-image: url();
+}
