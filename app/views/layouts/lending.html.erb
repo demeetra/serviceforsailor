@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Serviceforsailor</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+
+  </head>
+
+  <% if notice %>
+    <p class="notice"><%= notice %></p>
+  <% elsif alert %>
+    <p class="alert"><%= alert %></p>
+  <% end %>
+  <body>
+
+    <% if notice %>
+      <%= notice %>
+    <% end %>
+    <%= yield %>
+
+  </body>
+</html>

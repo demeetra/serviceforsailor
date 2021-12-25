@@ -1,12 +1,129 @@
 // Place all the styles related to the Lending controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-.grid {
-  display: grid;
-  grid-template-columns: calc(100vw * 145/1440) calc(100vw * 211/1440) calc(100vw * 184/1440) calc(100vw * 121/1440) repeat(2, 1fr)
-                         calc(100vw * 121/1440) calc(100vw * 184/1440) calc(100vw * 211/1440) calc(100vw * 145/1440);
-  grid-gap: calc(100vw * 40/1440) calc(100vw * 0/1440);
+// .grid {
+//   display: grid;
+//   grid-template-columns: calc(100vw * 145/1440) calc(100vw * 211/1440) calc(100vw * 184/1440) calc(100vw * 121/1440) repeat(2, 1fr)
+//                          calc(100vw * 121/1440) calc(100vw * 184/1440) calc(100vw * 211/1440) calc(100vw * 145/1440);
+//   grid-gap: calc(100vw * 40/1440) calc(100vw * 0/1440);
+// }
+// .main_map{
+//   background-image: url();
+// }
+
+body{
+  font-family: Helvetica-light;
+  color: #D8E0F3;
+  background-image: url(fon_for_landing.svg);
+  background-size: cover;
 }
-.main_map{
-  background-image: url();
+.menu{
+  background-image: url(menu_fon.svg);
+  background-size: cover;
+  top: 0;
+  width: 100%;
+  height: 10%;
+  position: fixed;
+  margin-left: 0;
+  border-bottom: 1px solid black;
+}
+.logo_fon{
+  margin-left: 4%;
+  width: 3.2%;
+  height: 50%;
+  background-image: url(logo.svg);
+  background-size: cover;
+}
+.menu_punct{
+  margin-top: 1%;
+  margin-right: 6%;
+  position: relative;
+  display: inline-block;
+}
+.m_p1{
+  margin-left: 45%;
+}
+.main_show{
+  margin-top: 12%;
+}
+button.main_text {
+  width: 15%;
+  height: 10%;
+
+}
+button{
+  margin-top: 5%;
+  background: none;
+  border: 1px solid #D8E0F3;
+  color: #D8E0F3;
+  padding: 2%;
+}
+button:hover{
+  background-color: #676399;
+}
+a:link, a:visited, a:hover, a:active{
+  color: #D8E0F3;
+}
+
+.main_text{
+  margin-left: 50%;
+width: 50%;
+}
+.lir_it{
+  margin: 40% 15%;
+}
+h1{
+  font-family: Lora-Regular;
+  font-size: 64px;
+}
+h4{
+  font-family: Lora-Italic;
+  font-size: 50px;
+}
+.text_cen{
+  width: 22%;
+  height: 20%;
+}
+.tx_cen1{
+  margin-left: 8.5%;
+}
+.tx_cen2{
+  margin-left: 32%;
+}
+.tx_cen3{
+  margin-left: 56%;
+}
+.tx_cen4{
+  margin-left: 80%;
+}
+.monsters{
+  padding-top: 3%;
+  padding-left: 10%;
+}
+.monster2{
+  margin-top: 23%;
+  margin-left: 50%;
+  margin-bottom: 20%;
+}
+h4{
+  margin-top: 75%;
+  margin-left: 10%;
+}
+.polezen{
+  margin-top: 20%;
+}
+.number{
+  display: inline-block;
+  width: 35%;
+  margin-left: 10%;
+}
+.table{
+  margin-left: 10%;
+  margin-top: 40%;
+}
+table{
+  margin-top: 2%;
+  border: 1px solid #D8E0F3;
+  width: 80%;
+  height: 40%;
 }
